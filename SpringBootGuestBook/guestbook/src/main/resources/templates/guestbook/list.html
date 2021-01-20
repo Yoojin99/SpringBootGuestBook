@@ -104,6 +104,16 @@
             if(msg){
                 $(".modal").modal();
             }
+
+            var searchForm = $("#searchForm")
+
+            $('.btn-search').click(function(e){
+                searchForm.submit();
+            })
+
+            $('.btn-clear').click(function(e){
+                searchForm.empty().submit();
+            })
         </script>
 
     </th:block>
